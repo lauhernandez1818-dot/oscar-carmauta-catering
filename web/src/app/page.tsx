@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HeroPhoto } from "@/components/HeroPhoto";
 import { TeamPhoto } from "@/components/TeamPhoto";
 
@@ -46,11 +47,14 @@ export default function Home() {
         <header className="relative z-20 flex items-center justify-between px-5 py-5 sm:px-8 lg:absolute lg:inset-x-0 lg:top-0 lg:px-0 lg:py-6">
           <div className="flex w-full lg:grid lg:grid-cols-2">
             <div className="flex w-full items-center justify-between lg:desk-x lg:pr-8">
-              <a
-                className="font-display text-lg font-bold tracking-[0.35em] text-[#f7dd9a]"
-                href="#"
-              >
-                OC
+              <a className="relative block h-10 w-10 shrink-0 sm:h-11 sm:w-11" href="#">
+                <Image
+                  src="/LOGOOC.jpg"
+                  alt="Oscar Carmauta"
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </a>
               <a
                 className="border border-[#d5aa52]/50 bg-[#050505]/70 px-5 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#f7dd9a] backdrop-blur transition hover:bg-[#d5aa52] hover:text-[#050505] lg:bg-[#d5aa52] lg:text-[#050505] lg:shadow-[0_8px_32px_rgba(213,170,82,0.25)] lg:backdrop-blur-none lg:hover:bg-[#f7dd9a]"
