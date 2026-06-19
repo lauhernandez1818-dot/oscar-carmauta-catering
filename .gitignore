@@ -1,0 +1,22 @@
+# Next.js app
+web/node_modules/
+web/.next/
+web/out/
+web/.vercel/
+web/*.tsbuildinfo
+
+# Env / secrets
+.env
+.env.*
+web/.env*
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / local tooling
+.cursor/

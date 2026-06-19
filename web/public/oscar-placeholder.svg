@@ -1,0 +1,27 @@
+<svg width="960" height="1200" viewBox="0 0 960 1200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder portrait for Oscar Carmauta</title>
+  <desc id="desc">Elegant gold and black portrait placeholder.</desc>
+  <rect width="960" height="1200" fill="#090806"/>
+  <circle cx="480" cy="362" r="174" fill="url(#face)"/>
+  <path d="M205 1042C226 814 333 644 480 644C627 644 734 814 755 1042H205Z" fill="url(#suit)"/>
+  <path d="M304 994C325 830 392 736 480 736C568 736 635 830 656 994H304Z" fill="#12100C"/>
+  <path d="M252 178C324 91 426 49 545 64C662 79 744 154 786 276" stroke="#D5AA52" stroke-width="10" stroke-linecap="round"/>
+  <path d="M167 1000C199 772 322 580 480 580C638 580 761 772 793 1000" stroke="#D5AA52" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="480" cy="362" r="236" stroke="url(#ring)" stroke-width="2"/>
+  <text x="480" y="1120" text-anchor="middle" fill="#F7DD9A" font-family="Georgia, serif" font-size="76" font-weight="700">OC</text>
+  <defs>
+    <linearGradient id="face" x1="306" x2="654" y1="188" y2="536" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7DD9A"/>
+      <stop offset="1" stop-color="#9E722C"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="205" x2="755" y1="644" y2="1042" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#201A10"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="244" x2="716" y1="126" y2="598" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF1B5"/>
+      <stop offset="0.45" stop-color="#D5AA52"/>
+      <stop offset="1" stop-color="#5E4217"/>
+    </linearGradient>
+  </defs>
+</svg>

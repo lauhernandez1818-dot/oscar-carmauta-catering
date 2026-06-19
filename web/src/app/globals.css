@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #f8f1df;
+  --gold: #d5aa52;
+  --gold-soft: #f7dd9a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background:
+      radial-gradient(ellipse at 0% 0%, rgba(213, 170, 82, 0.07), transparent 42rem),
+      radial-gradient(ellipse at 100% 30%, rgba(213, 170, 82, 0.05), transparent 36rem),
+      var(--background);
+  }
+}
+
+::selection {
+  background: var(--gold);
+  color: #050505;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #f9e7a8 0%, #d5aa52 45%, #fff5c6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(213, 170, 82, 0.7) 20%,
+    rgba(213, 170, 82, 0.7) 80%,
+    transparent
+  );
+}
+
+.gold-rule-left {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(213, 170, 82, 0.85), transparent);
+}
+
+/* Padding lateral que escala en pantallas grandes — solo desktop */
+@media (min-width: 1024px) {
+  .desk-x {
+    padding-left: clamp(3rem, 6vw, 8rem);
+    padding-right: clamp(3rem, 6vw, 8rem);
+  }
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-rise {
+  animation: hero-rise 0.65s ease-out forwards;
+  opacity: 0;
+}
+
+.hero-rise-1 {
+  animation-delay: 0.1s;
+}
+.hero-rise-2 {
+  animation-delay: 0.22s;
+}
+.hero-rise-3 {
+  animation-delay: 0.34s;
+}
+.hero-rise-4 {
+  animation-delay: 0.46s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-rise {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.services-track {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.services-track::-webkit-scrollbar {
+  display: none;
+}
