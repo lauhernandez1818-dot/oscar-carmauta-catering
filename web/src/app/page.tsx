@@ -135,7 +135,7 @@ export default function Home() {
         </p>
       </section>
 
-      {/* ── SERVICIOS: LISTA EDITORIAL + SCROLL HORIZONTAL EN MOBILE ── */}
+      {/* ── SERVICIOS: lista editorial (todos visibles en mobile) ── */}
       <section className="border-y border-[#d5aa52]/15 py-24 lg:py-32" id="servicios">
         <div className="mb-12 px-5 sm:px-8 lg:desk-x lg:mb-16">
           <p className="text-[0.65rem] font-bold uppercase tracking-[0.45em] text-[#d5aa52]">
@@ -146,40 +146,19 @@ export default function Home() {
           </h2>
         </div>
 
-        {/* Mobile / tablet: banda horizontal */}
-        <div className="services-track flex gap-0 overflow-x-auto px-5 pb-4 sm:px-8 lg:hidden">
-          {services.map((service) => (
-            <article
-              className="min-w-[78vw] shrink-0 border-l border-[#d5aa52]/35 pl-6 pr-10 sm:min-w-[55vw]"
-              key={service.num}
-            >
-              <span className="font-display text-6xl font-bold text-[#d5aa52]/25">
-                {service.num}
-              </span>
-              <h3 className="font-display mt-4 text-2xl font-semibold text-white">
-                {service.title}
-              </h3>
-              <p className="mt-3 max-w-xs text-sm leading-7 text-white/50">
-                {service.description}
-              </p>
-            </article>
-          ))}
-        </div>
-
-        {/* Desktop: lista editorial full-width */}
-        <div className="hidden lg:block lg:desk-x">
+        <div className="px-5 sm:px-8 lg:desk-x">
           {services.map((service, index) => (
             <article className="group" key={service.num}>
               {index > 0 && <div className="gold-rule-left my-0 opacity-40" />}
-              <div className="grid grid-cols-[7rem_1fr] gap-10 py-12 xl:grid-cols-[9rem_1fr] xl:gap-16">
-                <span className="font-display text-5xl font-bold text-[#d5aa52]/30 transition group-hover:text-[#d5aa52]/60 xl:text-6xl">
+              <div className="grid grid-cols-[4rem_1fr] gap-5 py-8 sm:grid-cols-[5rem_1fr] sm:gap-8 lg:grid-cols-[7rem_1fr] lg:gap-10 lg:py-12 xl:grid-cols-[9rem_1fr] xl:gap-16">
+                <span className="font-display text-4xl font-bold text-[#d5aa52]/30 transition group-hover:text-[#d5aa52]/60 sm:text-5xl lg:text-5xl xl:text-6xl">
                   {service.num}
                 </span>
-                <div className="max-w-3xl">
-                  <h3 className="font-display text-3xl font-semibold text-white xl:text-4xl">
+                <div className="lg:max-w-3xl">
+                  <h3 className="font-display text-xl font-semibold text-white sm:text-2xl lg:text-3xl xl:text-4xl">
                     {service.title}
                   </h3>
-                  <p className="mt-4 text-base leading-7 text-white/50 xl:text-lg">
+                  <p className="mt-3 text-sm leading-7 text-white/50 sm:text-base lg:mt-4 lg:text-base xl:text-lg">
                     {service.description}
                   </p>
                 </div>

@@ -108,12 +108,3 @@ body {
     transform: none;
   }
 }
-
-.services-track {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.services-track::-webkit-scrollbar {
-  display: none;
-}
